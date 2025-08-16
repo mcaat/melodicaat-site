@@ -1,0 +1,16 @@
+{
+  "name": "neocities-uploader",
+  "version": "1.0.0",
+  "description": "Simple Neocities uploader",
+  "scripts": {
+    "upload": "node upload.js",
+    "dev": "live-server"
+  },
+  "dependencies": {
+    "form-data": "^4.0.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

@@ -1,0 +1,63 @@
+/* Main container class */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #000;
+    border: 2px solid #00ff00;
+    padding: 20px;
+}
+
+/* Header section class */
+.header {
+    text-align: center;
+    border-bottom: 1px solid #00ff00;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Main content wrapper class */
+.main-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Sidebar class */
+.sidebar {
+    width: 200px;
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 15px;
+    height: fit-content;
+}
+
+/* Main content area class */
+.content-area {
+    flex: 1;
+    background-color: #111;
+    border: 1px solid #333;
+    padding: 15px;
+}
+
+/* Date navigation class */
+.date-nav {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+/* ASCII art preservation class */
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+    color: #00ff00;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Mood section class */
+.mood-section {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 15px 0;
+    background-color: #0a0a0a;
+}
