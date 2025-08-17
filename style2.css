@@ -209,6 +209,7 @@
                 font-family: 'Fairy', sans-serif;
                 font-size: 62px;
                 color: #003d66;
+                text-align: center;
             }
 
             strong {
@@ -277,7 +278,6 @@
                 aside {
                     width: 100%;
                 }
-                
                 
                 .layout-container {
                     flex-direction: column;
