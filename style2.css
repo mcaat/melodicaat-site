@@ -238,6 +238,17 @@
                 border-radius: 8px;
                 flex-shrink: 0; /* Prevents sidebar from shrinking */
             }
+            .updates-link {
+                color: #2970ff;
+                text-decoration: underline rgba(218, 165, 32, 0.468);
+                transition: font-size 0.3s, color 0.3s, text-shadow 0.3s;
+            }
+            .updates-link:hover {
+                font-size: 20px;
+                color: #75a3ff;
+                text-decoration: underline;
+                text-shadow: #2970ff 0 0 5px;
+            }
               .main-content {
                 flex: 1;
                 padding: 20px;
