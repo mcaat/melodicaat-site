@@ -15,5 +15,9 @@ Thumbs.db
 *.temp
 *.log
 
+# Local deployment scripts (contains sensitive info)
+upload-to-neocities.sh
+README.md
+
 # Don't ignore the .github folder (needed for Actions)
 !.github/
