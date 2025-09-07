@@ -228,8 +228,9 @@
                 display: block; /* Changed from flex to block for better content flow */
             }
             
-            .sidebar {
+            .sidebar-container {
                 width: 250px;
+                height: auto;
                 background-color: #f0f0f0;
                 padding: 20px;
                 outline: 8px ridge rgba(29, 89, 186, 0.6);
