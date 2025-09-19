@@ -15,7 +15,7 @@ Thumbs.db
 *.temp
 *.log
 
-# Local deployment scripts (contains sensitive info)
+# Local deployment 
 upload-to-neocities.sh
 README.md
 
