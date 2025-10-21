@@ -1,47 +1,52 @@
-
-
-            :root {
+:root {
                 --header-image: url('backs/br.jpg');
-                --body-bg-image: url('backs/bgglit.gif');
+                --body-bg-image: url('backs/kittehbg.png');
 
                 /* colors */
                 --content: #43256E;
             }
+            /*hello- this code is half mine, half sadgirl's (https://sadgrl.online/resources/). i'm planning to add explanations later on, but for now it's a bit messy. sorry :') */
 
-            /* if you have the URL of a font, you can set it below */
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+/* the JGS font family is under Copyright (c) 2022, Adel Faure contact@adelfaure.net,
+with Reserved Font Name jgs5, jgs7, jgs9. It is licensed under the SIL Open Font License, Version 1.1. http://scripts.sil.org/OFL */
+           
+@font-face { 
+                font-family: 'jgs5';
+                src: url('fonts/jgs-main/fonts/jgs5.ttf') format('truetype');
+                font-display: swap;
             }
 
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
-                font-weight: bold;
+@font-face { 
+                font-family: 'jgs';
+                src: url('fonts/jgs-main/fonts/jgs7.ttf') format('truetype'),
+                     url('fonts/jgs-main/fonts/jgs9.ttf') format('truetype');
+                font-display: swap;
             }
 
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
-                font-style: italic;
-            }
-
-            @font-face {
-                font-family: Nunito;
-                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
-                font-style: italic;
-                font-weight: bold;
-            }
+/*tilortion was designed by Cristopher Siniväli, of the SUVA type foundry, Estonian academy of arts. https://www.suvatypefoundry.ee/ */
+            
             
             @font-face {
-                font-family: 'Fairy';
-                src: url('fonts/FairyDustB.woff') format('woff'),
-                     url('fonts/FairyDustB.ttf') format('truetype');
+                font-family: 'tiltortion';
+                src: url('fonts/Tiltortion.otf') format('opentype');
+                font-display: swap;
+            }
+/* the following fonts were also designed in the SUVA type foundry, by different designers. see above link for more info */
+
+            @font-face {
+                font-family: 'kiwi';
+                src: url('fonts/Kiwi.otf') format('opentype');
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: 'hypha';
+                src: url('fonts/Hypha.otf') format('opentype');
                 font-display: swap;
             }
 
             body {
-                font-family: 'Nunito', sans-serif;
+                font-family: 'jgs', Arial, Tiltortion, Helvetica, sans-serif;
                 margin: 0;
                 background-color: #003333;
                 /* you can delete the line below if you'd prefer to not use an image */
@@ -177,30 +182,28 @@
                 text-align: center;
                 /* this centers the footer text */
             }
-
-            h1,
-            h2,
+/* TEXT CSS */
+            h2{
+                font-size: 42px;
+                font-weight: bold;
+            }
             h3 {
-                color: #003399;
+                font-family:'jgs5', sans-serif;
+                font-size: 20px;
+                color: #000000;
             }
 
             h1 {
-                font-family: 'Fairy', sans-serif;
-                font-size: 62px;
-                color: #003d66;
+                font-family: 'tiltortion', 'jgs5', sans-serif;
+                font-language-override: normal;
+                font-size: 70px;
+                color: #000000;
                 text-align: center;
             }
 
             strong {
                 /* this styles bold text */
                 color: #ED64F5;
-            }
-
-            /* this is just a cool box, it's the darker colored one */
-            .box {
-                background-color: #13092D;
-                border: 1px solid #ED64F5;
-                padding: 10px;
             }
 
             /* CSS for extras */
@@ -221,68 +224,118 @@
             }
             
             .firstDiv {
-                border: 2px outset aliceblue;
+                border: 2px outset rgb(15, 16, 16);
                 border-radius: 6px;
-                background-color: floralwhite;
+                border-style: dashed;
+                background-color: rgb(255, 255, 255);
                 flex: 1;
                 padding: 20px;
-                display: block; /* Changed from flex to block for better content flow */
+                display: flex;
+                height: auto;
             }
-            
             .sidebar-container {
                 display: flex;
+                align-items: center;
                 flex-direction: column;
-                width: 250px;
+                width: 200px;
                 height: auto;
                 background-color: #f0f0f0;
+                background-image: url(backs/sheetmusicy.gif);
+                background-size: cover;
                 padding: 20px;
-                outline: 8px ridge rgba(29, 89, 186, 0.6);
-                border-radius: 2rem;
-                border: 1px solid #ddd;
+                outline: 8px ridge rgba(0, 0, 0, 0.6);
+                border-color: #000000;
+                border: 4px inset #100000;
                 border-radius: 8px;
-                flex-shrink: 0; /* Prevents sidebar from shrinking */
+                flex-shrink: 0; 
             }
             /* Sidebar button image fix for flexbox */
             .sidebar-btn {
-                background: none;
-                border: none;
-                padding: 0;
-                margin-bottom: 16px;
+                display: block;      /* anchor is the button */
+                margin-bottom: 10px;
+                text-decoration: none;
                 cursor: pointer;
-            }
-            .sidebar-btn {
                 flex-shrink: 0;
-                display: block;
             }
 
             .sidebar-btn img {
-               width: 120px;
-               height: auto;
-              display: block;
+                width: 140px;
+                 height: auto;
+                 display: block;
+                 transition: transform 0.3s ease;
              }
-            .updates-link {
-                color: #2970ff;
-                text-decoration: underline rgba(218, 165, 32, 0.468);
-                transition: font-size 0.3s, color 0.3s, text-shadow 0.3s;
+            .sidebar-btn:hover img { transform: scale(1.25); }
+             .sidebar-btn:active img { transform: scale(2); }
+
+             .nav-header {
+                font-family: 'kiwi', sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+                font-style: italic;
+                margin-bottom: 15px;
+                color: #1f1d1d5c;
+                text-align: center;
             }
-            .updates-link:hover {
-                font-size: 20px;
-                color: #75a3ff;
-                text-decoration: underline;
-                text-shadow: #2970ff 0 0 5px;
-            }
-              .main-content {
+            .main-content {
                 flex: 1;
                 padding: 20px;
               }
-              .footer {
-
+            .footer {
                 width: 100%;
                 height: 40px;
                 padding: 10px;
                 text-align: center;
               }
-            /* BELOW THIS POINT IS MEDIA QUERY */
+            /* Performances page container */
+.performances-container {
+  /* equal spacing and centered max width */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;               /* equal distance between items */
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;          /* center the whole grid */
+  align-items: start;
+  box-sizing: border-box;
+}
+
+/* Individual performance item */
+.performance-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background-color: #f6f6f6;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  min-height: 280px;       /* keep items visually equal height */
+}
+
+/* consistent thumbnail sizing */
+.performance-item img {
+  width: 100%;
+  height: 160px;          /* fixed visual height */
+  object-fit: cover;      /* crop to fill without distortion */
+  border-radius: 6px;
+  display: block;
+}
+
+/* tidy text & links inside items */
+.performance-item p {
+  margin: 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.performance-item a {
+  color: inherit;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+/* BELOW THIS POINT IS MEDIA QUERY */
 
             /* so you wanna change the width of your page? 
     by default, the container width is 900px.

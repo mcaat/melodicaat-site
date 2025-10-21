@@ -4,50 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> melodicaat ⊹₊⟡⋆</title>
+
 <link rel="stylesheet" href="style2.css">
+
+<audio id="audion" src="audios/pop.mp3"></audio>
+  <script>
+  function play(){
+  const audio = document.getElementById("audion");
+  audio.currentTime = 0;
+  audio.play()
+}
+</script>
   </head>
   <body> 
-    <h1>Welcome to my Website!</h1>
+    <h1>♬⋆.˚Welcome to my Website!☆</h1>
     
     <div class="layout-container">
         <div class="firstDiv"> 
            <h2>
-            <p> hi! i'm a composer and sound artist. thanks for checking out my site! </p>
+            <p>⋆.˚🎧˚.⋆ hi! i'm a composer and sound artist. thanks for checking out my site! ⋆˙⟡ </p>
           </h2>
-            <p> my youtube channel is
+           <h3> <p> my youtube channel is
                <a href="https://www.youtube.com/@melodicaat"
             target="_blank">here</a>. feel free to to take a look at it!
             </p>
-            <p>I'm a music tech student and I have a passion for making little janky songs and fun interactable max patches (to be uploaded to the site soon!)</p>
+            <p>I'm a music tech student who has a passion for making experimental tunes and fun interactable max patches (to be uploaded to the site soon!</p>
             <p>I'm also planning to build my own analogue synth and to learn arduino but that's neither here nor there ;)</p>
-            <p> more coming soon!! </p>
+            <p> navigate the site through the sidebar!</p></h3>
         </div>
         
         <div class="sidebar-container">
-            <a href="updates.html">
-              <button class="sidebar-btn">
-                <img src="graphics/updates.png" alt="Updates" />
-              </button>
-            </a>
-            <a href="max.html">
-              <button class="sidebar-btn">
-                <img src="graphics/max_patches(1).png" alt="Max Patches" />
-              </button>
-            </a>
-            <a href="performances.html">
-              <button class="sidebar-btn">
-                <img src="graphics/performances.png" alt="Performances" />
-              </button>
-            </a>
-        </div>
-    </div>
+  <div class="nav-header">navigation ⊹݁</div>
+  <a class="sidebar-btn" href="updates.html" onmouseover="play()" onclick="play()">
+    <img src="graphics/updates.png" alt="Updates" />
+  </a>
+
+  <a class="sidebar-btn" href="max.html" onmouseover="play()">
+    <img src="graphics/maxgraphics/max_msp.png" alt="Max Patches" />
+  </a>
+
+  <a class="sidebar-btn" href="performances.html" onmouseover="play()">
+    <img src="graphics/recordings.png" alt="Recordings" />
+  </a>
+
+  <a class="sidebar-btn" href="sheetmusic.html" onmouseover="play()" onclick="play()">
+    <img src="graphics/sheet_music.png" alt="Sheet Music" />
+  </a>
+</div>
+
+</div>
     <div class="footer">
-      <img title="autistic pride" style="image-rendering: pixelated;" src="graphics/madewithautism.png" />
-      <img title="made with vscode" style="image-rendering: pixelated;" src="graphics/vscode.png" />
-      <img title="fvck perfection!" src="graphics/effperfection.png" />
+    <img title="autistic pride" style="image-rendering: pixelated;" src="graphics/footer/madewithautism.png" />
+    <img title="fvck perfection!" src="graphics/footer/effperfection.png" />
       <a href="https://badge.les.bi"><img title="trans rights :3" style="image-rendering: pixelated;" src="https://badge.les.bi/88x31/bi/trans/heart/outset.png"></a>
-      <a href="https://github.com/mcaat"><img title="my github page" style="image-rendering: pixelated;" src="graphics/github.png"></a>
-        <p>made with ♡ by melodicaat.</p>
-   </body>
+      <a href="https://github.com/mcaat"><img title="my github page" style="image-rendering: pixelated;" src="graphics/footer/github.png"></a>
+        <p>made with ♡ by melodicaat. <a rel="me" href="https://metalhead.club/@melodicaat">mastodon</a> <a href="credits.html">credits</a></p>
+      </div>
+  </body>
 </html>
-   
